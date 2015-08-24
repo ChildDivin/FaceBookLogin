@@ -1,25 +1,56 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="FaceBookLogin" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3GY-qY-VBj">
+                                <rect key="frame" x="10" y="50" width="300" height="300"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FPR-6n-cFK" customClass="FBSDKLoginButton">
+                                <rect key="frame" x="20" y="399" width="280" height="49"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="49" id="u2h-F4-l7W"/>
+                                </constraints>
+                                <state key="normal" title="FBLOgin">
+                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="FPR-6n-cFK" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="4" id="DD7-Ez-TAM"/>
+                            <constraint firstItem="FPR-6n-cFK" firstAttribute="top" secondItem="3GY-qY-VBj" secondAttribute="bottom" constant="49" id="DqH-fr-lyd"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="FPR-6n-cFK" secondAttribute="bottom" constant="120" id="HZx-cl-rIu"/>
+                            <constraint firstItem="FPR-6n-cFK" firstAttribute="centerX" secondItem="3GY-qY-VBj" secondAttribute="centerX" id="gqr-Q7-S6E"/>
+                            <constraint firstItem="3GY-qY-VBj" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="30" id="ln1-af-rqz"/>
+                            <constraint firstItem="3GY-qY-VBj" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-6" id="p46-7b-qow"/>
+                            <constraint firstItem="FPR-6n-cFK" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="uKg-E2-qSx"/>
+                        </constraints>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="btnLogin" destination="FPR-6n-cFK" id="CJr-Ri-T4y"/>
+                        <outlet property="imgProfile" destination="3GY-qY-VBj" id="JHM-w2-reZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-70" y="261"/>
         </scene>
     </scenes>
 </document>

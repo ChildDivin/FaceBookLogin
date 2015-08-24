@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>A303B78B-3B72-4D71-A5C3-64F5F1BD1BBD</string>
+	<key>IDESourceControlProjectName</key>
+	<string>FaceBookLogin</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>231232C8FCA9314967D472C8D5BB829D25FA3C9B</key>
+		<string>https://github.com/ileshtops/FaceBookLogin.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>FaceBookLogin.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>231232C8FCA9314967D472C8D5BB829D25FA3C9B</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/ileshtops/FaceBookLogin.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>231232C8FCA9314967D472C8D5BB829D25FA3C9B</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>231232C8FCA9314967D472C8D5BB829D25FA3C9B</string>
+			<key>IDESourceControlWCCName</key>
+			<string>FaceBookLogin</string>
+		</dict>
+	</array>
+</dict>
+</plist>

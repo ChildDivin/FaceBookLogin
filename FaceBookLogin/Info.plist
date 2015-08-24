@@ -7,7 +7,7 @@
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
-	<string>com.topsprofile..$(PRODUCT_NAME:rfc1034identifier)</string>
+	<string>com.topsprofile.FaceBookLogin</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
@@ -20,6 +20,21 @@
 	<string>????</string>
 	<key>CFBundleVersion</key>
 	<string>1</string>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>fb365437160317025</string>
+			</array>
+		</dict>
+	</array>
+	<key>FacebookAppID</key>
+	<string>365437160317025</string>
+	<key>FacebookDisplayName</key>
+	<string>Friends_inviteDemo</string>
+	<key>LSApplicationCategoryType</key>
+	<string></string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>UILaunchStoryboardName</key>
