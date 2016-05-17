@@ -24,10 +24,10 @@ class ViewController: UIViewController,FBSDKLoginButtonDelegate {
 
         }
         else if result.isCancelled {
-            println("cancell by user")
+            print("cancell by user")
         }
         else {
-             println(result.token.tokenString)
+             print(result.token.tokenString)
              self.loginCallWithTokan(result.token.tokenString)
         }
     }
@@ -65,7 +65,7 @@ class ViewController: UIViewController,FBSDKLoginButtonDelegate {
             success: { (operation: AFHTTPRequestOperation!, responseObject: AnyObject!) in
                 //println("\(responseObject)")
                 let dis:NSDictionary = (responseObject as? NSDictionary)!
-                println( String(format: "Some words %@ some more words", dis["id"] as! String))
+                print( String(format: "Some words %@ some more words", dis["id"] as! String))
                 self.profileImageCall(dis["id"] as! String)
             },
             failure: { (operation: AFHTTPRequestOperation!, error: NSError!) in
@@ -83,7 +83,7 @@ class ViewController: UIViewController,FBSDKLoginButtonDelegate {
                 //println("\(responseObject)")
                 let dis:NSDictionary = (responseObject as? NSDictionary)!
                 let dic:NSDictionary = (dis["data"] as? NSDictionary)!
-                println( String(format: "Some words %@ some more words", dic["url"] as! String))
+                print( String(format: "Some words %@ some more words", dic["url"] as! String))
                 self.imgProfile.setImageWithURL(NSURL(string:String(format: "%@", dic["url"] as! String)))
             },
             failure: { (operation: AFHTTPRequestOperation!, error: NSError!) in
